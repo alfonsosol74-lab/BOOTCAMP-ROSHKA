@@ -19,7 +19,7 @@ public class JuegoNim {
             else if (pila.equals("B")) indicePila = 1;
             else if (pila.equals("C")) indicePila = 2;
             else {
-                System.out.println("Pila inválida. Intenta de nuevo.");
+                System.out.println("Pila incorrecta. Intenta de nuevo.");
                 continue;
             }
             if (pilas[indicePila] == 0) {
