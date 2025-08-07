@@ -43,6 +43,7 @@ public class JuegoNim {
             if (juegoTerminado(pilas)) {
                 mostrarPilas(pilas);
                 System.out.println(jugadorActual + ", ya no quedan contadores, asi que... " + otroJugador + ", Ganaste!");
+                Shakira();
                 break;
             }
             String temp = jugadorActual;
@@ -56,5 +57,9 @@ public class JuegoNim {
     }
     public static boolean juegoTerminado(int[] pilas) {
         return pilas[0] == 0 && pilas[1] == 0 && pilas[2] == 0;
+    }
+
+    public static void Shakira (){
+        System.out.println("Zamina-mina, hé-hé\nWaka, waka, hé-hé\nZamina-mina, zangalewa? \nPorque esto es Africa");
     }
 }
